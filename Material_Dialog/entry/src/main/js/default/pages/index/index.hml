@@ -1,18 +1,14 @@
 <div class="container">
-<!--    <input type = "button" id = "btn" onclick="alert" value = "Alert"></input>-->
-<!--    <menu id ="massage">-->
-<!--        <option value="dqwd">-->
-<!--            asdas-->
-<!--        </option>-->
-<!--    </menu>-->
-<!--    <popup id="popup" class="popup" target="text" placement="top" keepalive="true" clickable="true"-->
-<!--           arrowoffset="100px" onvisibilitychange="visibilitychange" onclick="hidepopup">-->
-<!--        <text class="text">Text content of the pop-up</text>-->
-<!--    </popup>-->
-<!--    <button class="button" onclick="showpopup">Click to show the pop-up</button>-->
-    <input type = "button" id = "btn" onclick="alert" value = "Alert" style="margin-bottom: 100px;">Click</input>
+
+    <input type = "button" id = "btn" onclick="alert" value = "Alert">Click</input>
     <dialog id = 'main_alert' >
-        <text id = 'sub_alert'>Discard draft</text>
+        <div class = 'dialog_text'>
+            <text class = 'sub_alert'>Discard draft ?</text>
+            <div class = 'option'>
+                <text class = 'cancel'>Cancel</text>
+                <text class = 'discard'>Discard </text>
+            </div>
+        </div>
     </dialog>
 </div>
 

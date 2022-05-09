@@ -4,20 +4,37 @@
     align-items: center;
     left: 0px;
     top: 0px;
-    width: 454px;
-    height: 454px;
+
 }
 
-.title {
-    font-size: 30px;
-    text-align: center;
-    width: 200px;
-    height: 100px;
+#main_alert{
+    width:85%;
+    height:20%;
 }
 
-.main_alert,.sub_alert{
-    width:60%;
-    height:40%;
+.dialog_text{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.sub_alert{
+    color : #4E4B4B;
+    font-size: 25px;
+    padding: 0 5%;
+}
+.option{
+    display: flex;
+    flex-direction:row;
+    top:100%;
+    left:40%;
+    right:10%
+}
+
+.cancel,.discard{
+    font-size: 20px;
+    color: purple;
+    padding: 5% 5%;
 }
 
 @media screen and (device-type: tablet) and (orientation: landscape) {
