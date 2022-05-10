@@ -1,15 +1,34 @@
 .container {
     display: flex;
-    justify-content: center;
+    flex-direction:column;
+    justify-content: space-between;
     align-items: center;
     left: 0px;
     top: 0px;
 
 }
+.Heading{
+    background-color: purple;
+    padding-left: 36%;
+    margin-bottom: 40%;
+    height: 15%;
+    width: 100%;
+    color:white;
+    font-size: 35px;
+}
 
+#btn{
+    width:100%;
+    border-radius: 0;
+    margin: 80% 0;
+    font-size: 30px;
+    padding: 5% 5%;
+    background-color: gray;
+}
 #main_alert{
     width:85%;
-    height:20%;
+    height:100%;
+    margin: 40% 0;
 }
 
 .dialog_text{
@@ -22,19 +41,59 @@
     color : #4E4B4B;
     font-size: 25px;
     padding: 0 5%;
+    margin-top: 0px;
 }
 .option{
     display: flex;
     flex-direction:row;
     top:100%;
-    left:40%;
+    left:37%;
     right:10%
 }
 
-.cancel,.discard{
+.cancel,.discard,.ok{
     font-size: 20px;
-    color: purple;
+    text-color: purple;
     padding: 5% 5%;
+    background-color: transparent;
+}
+
+#main_Confirmation{
+    width:85%;
+    height:100%;
+    margin: 8% 0;
+}
+.sub_Confirmation{
+    font-size: 30px;
+    padding: 0 5% ;
+    margin-top : 10%;
+}
+.divider{
+    stroke-width: 1px;
+    color: #686565;
+    margin: 2% 0;
+}
+
+.radio{
+    height:80%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+#tone{
+    color: purple;
+}
+.radio_text{
+    font-size: 20px;
+}
+
+.tone_option{
+    display: flex;
+    flex-direction:row;
+    top:25%;
+    left:45%;
+    right:10%
 }
 
 @media screen and (device-type: tablet) and (orientation: landscape) {

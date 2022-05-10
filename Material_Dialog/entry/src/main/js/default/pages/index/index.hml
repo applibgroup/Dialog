@@ -1,12 +1,82 @@
 <div class="container">
 
-    <input type = "button" id = "btn" onclick="alert" value = "Alert">Click</input>
+    <text class = 'Heading'>Dialog</text>
+
+    <input type = "button" id = "btn" onclick="alert" value = "Alert dialog"></input>
     <dialog id = 'main_alert' >
         <div class = 'dialog_text'>
             <text class = 'sub_alert'>Discard draft ?</text>
             <div class = 'option'>
-                <text class = 'cancel'>Cancel</text>
-                <text class = 'discard'>Discard </text>
+                <button class = 'cancel'>Cancel</button>
+                <button class = 'discard'>Discard </button>
+            </div>
+        </div>
+    </dialog>
+
+    <input type = "button" id = "btn" onclick="simple" value = "Simple dialog"></input>
+    <dialog id = 'main_simple' >
+        <div class = 'dialog_text'>
+            <text class = 'simple_1'>Set Backup Account</text>
+            <div class = 'Backup_list'>
+
+                <text class = 'simple_2'>Set Backup Account</text>
+                <button class = 'cancel'>Cancel</button>
+                <button class = 'discard'>Discard </button>
+            </div>
+        </div>
+    </dialog>
+
+    <input type = "button" id = "btn" onclick="Confirmation" value = "Confirmation dialog"></input>
+    <dialog id = 'main_Confirmation' >
+        <div class = 'dialog_text'>
+            <text class = 'sub_Confirmation'>Phone Ringtone </text>
+            <divider class="divider" vertical="false"></divider>
+            <div class = 'radio'>
+                <div class = 'radio_name'>
+                    <input type = "radio" name="choice" id="tone"></input>
+                    <text class = "radio_text">None</text>
+                </div>
+                <div class = 'radio_name'>
+                    <input type = "radio" name="choice" id="tone"></input>
+                    <text class = "radio_text">Callisto</text>
+                </div>
+                <div class = 'radio_name'>
+                    <input type = "radio" name="choice" id="tone"></input>
+                    <text class = "radio_text">Ganymeda</text>
+                </div>
+                <div class = 'radio_name'>
+                    <input type = "radio" name="choice" id="tone"></input>
+                    <text class = "radio_text">Luna</text>
+                </div>
+                <div class = 'radio_name'>
+                    <input type = "radio" name="choice" id="tone"></input>
+                    <text class = "radio_text">oberon</text>
+                </div>
+                <div class = 'radio_name'>
+                    <input type = "radio" name="choice" id="tone"></input>
+                    <text class = "radio_text">phobos</text>
+                </div>
+                <div class = 'radio_name'>
+                    <input type = "radio" name="choice" id="tone"></input>
+                    <text class = "radio_text">Dione</text>
+                </div>
+
+            </div>
+            <divider class="divider" vertical="false"></divider>
+            <div class = 'tone_option'>
+                <button class = 'cancel'>Cancel</button>
+                <button class = 'ok'>Ok </button>
+            </div>
+        </div>
+    </dialog>
+
+    <input type = "button" id = "btn" onclick="alert" value = "Full-screen dialog"></input>
+    <dialog id = 'main_alert' >
+        <div class = 'dialog_text'>
+            <text class = 'sub_alert'>Discard draft ?</text>
+            <div class = 'option'>
+                <button class = 'cancel'>Cancel</button>
+                <button class = 'discard'>Discard </button>
             </div>
         </div>
     </dialog>
