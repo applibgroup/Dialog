@@ -1,0 +1,187 @@
+.container {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+
+}
+.Heading{
+
+    background-color: purple;
+    padding-left: 36%;
+    margin-bottom: 40%;
+    height: 15%;
+    width: 100%;
+    color:white;
+    font-size: 35fp;
+}
+
+#btn{
+    width:100%;
+    border-radius: 0;
+    margin: 80% 0;
+    font-size: 30fp;
+    padding: 5% 5%;
+    background-color: gray;
+}
+#main_alert{
+    width:85%;
+    height:100%;
+    margin: 40% 0;
+}
+
+.dialog_text{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.sub_alert{
+    color : #4E4B4B;
+    font-size: 25fp;
+    padding: 0 5%;
+    margin: 10% 5%;
+    top:0fp
+}
+.option{
+    display: flex;
+    flex-direction:row;
+/*    top:100%;*/
+    left:37%;
+    right:10%
+}
+
+.cancel,.discard,.ok{
+    font-size: 20fp;
+    text-color: purple;
+    padding: 5% 5%;
+    background-color: transparent;
+}
+
+#main_Confirmation{
+    width:85%;
+    height:100%;
+    margin: 8% 0;
+}
+.sub_Confirmation{
+    font-size: 30fp;
+    padding: 0 5% ;
+    margin-top : 10%;
+}
+.divider{
+    stroke-width: 2px;
+    color: #ff5f5a5a;
+    margin: 0.5% 0;
+}
+
+.radio{
+    height:70%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+#tone{
+    color: purple;
+}
+.radio_text{
+    font-size: 20fp;
+}
+
+.tone_option{
+    display: flex;
+    flex-direction:row;
+    top:25%;
+    left:45%;
+    right:10%
+}
+
+#main_Full-screen{
+    height: 100%;
+    width: 100%;
+}
+
+.full_screen_title{
+    display: flex;
+    flex-direction:row;
+}
+
+.close{
+    background-color: transparent;
+    margin: 0px 5%;
+}
+
+.sub_Full-screen{
+    font-size: 30fp;
+
+}
+
+.form_option{
+    height: 72%;
+    display: flex;
+    flex-direction:column;
+}
+
+.mail_select{
+    width:100%;
+    height: 10%;
+    margin: 0px 5%;
+    border-width: 2px;
+    border-color: gray;
+    margin-top: 3%;
+    padding: 2% 1%;
+    border-radius: 5fp;
+}
+
+.mail{
+    font-size: 20fp;
+    color: gray;
+    width: 100%;
+}
+
+.Event,.Loction{
+    width:100%;
+    height: 10%;
+    margin: 0px 5%;
+    border-width: 2px;
+    border-color: gray;
+    margin-top: 3%;
+    padding: 2% 1%;
+    border-radius: 5fp;
+}
+
+.from,.to{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+/*    width:100%;*/
+/*    height: 10%;*/
+/*    margin: 0px 5%;*/
+/*    border-width: 2px;*/
+/*    border-color: gray;*/
+/*    margin-top: 3%;*/
+/*    padding: 2% 1%;*/
+/*    border-radius: 5fp;*/
+}
+
+.Date{
+    width:50%
+}
+
+.Time{
+    width:20%
+}
+
+@media screen and (device-type: phone) and (orientation: landscape) {
+    .title {
+        font-size: 60px;
+    }
+}
+
+@media screen and (device-type: tablet) and (orientation: landscape) {
+    .title {
+        font-size: 100px;
+    }
+}
