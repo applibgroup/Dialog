@@ -3,11 +3,11 @@
     <text class = 'Heading'>Dialog</text>
 
     <input type = "button" id = "btn" onclick="alert" value = "Alert dialog"></input>
-    <dialog id = 'main_alert' >
+    <dialog id = 'main_alert'>
         <div class = 'dialog_text'>
             <text class = 'sub_alert'>Discard draft ?</text>
             <div class = 'option'>
-                <button class = 'cancel'>Cancel</button>
+                <button class = 'cancel' on:click="cancel">Cancel</button>
                 <button class = 'discard'>Discard </button>
             </div>
         </div>
@@ -17,11 +17,19 @@
     <dialog id = 'main_simple' >
         <div class = 'dialog_text'>
             <text class = 'simple_1'>Set Backup Account</text>
-            <div class = 'Backup_list'>
-
-                <text class = 'simple_2'>Set Backup Account</text>
-                <button class = 'cancel'>Cancel</button>
-                <button class = 'discard'>Discard </button>
+            <div class = 'backup_list'>
+                <div class = 'backup' >
+                    <image type = 'circle' class = 'user' src = 'Material_Dialog/entry/src/main/resources/base/media/user.png'></image>
+                    <text class = 'simple_2'>User1@gmail.com</text>
+                </div>
+                <div class = 'backup' >
+                    <image class = 'user' src = 'Material_Dialog/entry/src/main/resources/base/media/user.png'>fewef</image>
+                    <text class = 'simple_2'>User2@gmail.com</text>
+                </div>
+                <div class = 'backup' >
+                    <button type = 'circle' class = 'add' icon = 'Material_Dialog/entry/src/main/resources/base/media/add.png'></button>
+                    <text class = 'simple_2'>Add account</text>
+                </div>
             </div>
         </div>
     </dialog>
@@ -64,7 +72,7 @@
             </div>
             <divider class="divider" vertical="false"></divider>
             <div class = 'tone_option'>
-                <button class = 'cancel'>Cancel</button>
+                <button class = 'cancel' onclick="cancel">Cancel</button>
                 <button class = 'ok'>Ok </button>
             </div>
         </div>
@@ -74,7 +82,7 @@
     <dialog id = 'main_Full-screen' >
         <div class = 'dialog_text'>
             <div class = 'full_screen_title'>
-                <button class="close" type="circle" icon="close.png"></button>
+                <button class="close" type="circle" icon="src/main/resources/base/media/icon.png"></button>
                 <text class = 'sub_Full-screen'>Creat New Event</text>
             </div>
             <div class='form_option'>
@@ -85,7 +93,7 @@
                 </select>
                 <input type='text' name='user' class = 'Event' placeholder="Event Name"></input>
                 <input type='text' name='user' class = 'Loction' placeholder="Loction"></input>
-                <text>From</text>
+                <text class = 'from_to'>From</text>
                 <div class="from">
                     <select class = 'Date'>
                         <option value = 'Date_value'>Mon,March26</option>
@@ -98,7 +106,7 @@
                         <option value = 'Time_value'>17:00</option>
                     </select>
                 </div>
-                <text>To</text>
+                <text class = 'from_to'>To</text>
                 <div class="to">
                     <select class = 'Date'>
                         <option value = 'Date_value'>Mon,March27</option>
@@ -111,10 +119,21 @@
                         <option value = 'Time_value'>17:00</option>
                     </select>
                 </div>
+                <text class = 'from_to'>Time Option</text>
+                <select class = 'mail_select'>
+                    <option value = 'mail'>India Standard Time</option>
+                    <option value = 'mail'>Pacific Standard Time</option>
+                    <option value = 'mail'>American Standard Time</option>
+                </select>
             </div>
             <div class = 'option'>
-                <button class = 'cancel'>Cancel</button>
-                <button class = 'discard'>Discard </button>
+                <button class = 'cancel' onclick="cancel">Cancel</button>
+                <button class = 'discard' onclick="save">Save </button>
+                <dialog id = 'save'>
+                    <div>
+                        <text class = 'save_text'>Save</text>
+                    </div>
+                </dialog>
             </div>
         </div>
     </dialog>

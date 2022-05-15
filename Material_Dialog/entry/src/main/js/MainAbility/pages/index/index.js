@@ -13,5 +13,14 @@ export default {
     },
     Full_screen:function(){
         this.$element('main_Full-screen').show();
+    },
+    cancel:function(){
+        this.$element('main_alert').close();
+        this.$element('main_Confirmation').close();
+        this.$element('main_Full-screen').close();
+    },
+    save:function(){
+        this.$element('save').show();
+        this.$element('main_Full-screen').close();
     }
 }
